@@ -1,0 +1,117 @@
+{
+  "api": {
+    "name": "FullScreenNotificationPlugin",
+    "slug": "fullscreennotificationplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "cancelNotification",
+        "signature": "() => any",
+        "parameters": [],
+        "returns": "any",
+        "tags": [],
+        "docs": "Cancel the current notification",
+        "complexTypes": [],
+        "slug": "cancelnotification"
+      },
+      {
+        "name": "canUseFullScreenIntent",
+        "signature": "() => any",
+        "parameters": [],
+        "returns": "any",
+        "tags": [],
+        "docs": "Check if the user granted permission to show full screen intents",
+        "complexTypes": [],
+        "slug": "canusefullscreenintent"
+      },
+      {
+        "name": "openFullScreenIntentSettings",
+        "signature": "() => any",
+        "parameters": [],
+        "returns": "any",
+        "tags": [],
+        "docs": "Open the settings page to grant the full screen permission",
+        "complexTypes": [],
+        "slug": "openfullscreenintentsettings"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'launch', listenerFunc: MessageListener) => any",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'launch'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "MessageListener"
+          }
+        ],
+        "returns": "any",
+        "tags": [
+          {
+            "name": "param",
+            "text": "eventName"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          }
+        ],
+        "docs": "Add a listener when the fullscreen intent launches the app.\nYou can navigate here to the destination page.\nThe parameter gives you the information if an action button has been clicked.",
+        "complexTypes": [
+          "MessageListener",
+          "PluginListenerHandle"
+        ],
+        "slug": "addlistenerlaunch-"
+      },
+      {
+        "name": "removeAllListeners",
+        "signature": "() => any",
+        "parameters": [],
+        "returns": "any",
+        "tags": [],
+        "docs": "Removes all listeners.",
+        "complexTypes": [],
+        "slug": "removealllisteners"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "PluginListenerHandle",
+      "slug": "pluginlistenerhandle",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "remove",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "() => any"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [
+    {
+      "name": "MessageListener",
+      "slug": "messagelistener",
+      "docs": "",
+      "types": [
+        {
+          "text": "(response: any): void",
+          "complexTypes": []
+        }
+      ]
+    }
+  ],
+  "pluginConfigs": []
+}
